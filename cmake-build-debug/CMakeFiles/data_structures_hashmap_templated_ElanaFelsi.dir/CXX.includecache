@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/elana/BootCamp-HW/cpp/data-structures-hashmap-templated-ElanaFelsi/HashedMap.cpp
+HashedMap.h
+/home/elana/BootCamp-HW/cpp/data-structures-hashmap-templated-ElanaFelsi/HashedMap.h
+
+/home/elana/BootCamp-HW/cpp/data-structures-hashmap-templated-ElanaFelsi/HashedMap.h
+stdlib.h
+-
+string
+-
+vector
+-
+linkedList.h
+/home/elana/BootCamp-HW/cpp/data-structures-hashmap-templated-ElanaFelsi/linkedList.h
+
+/home/elana/BootCamp-HW/cpp/data-structures-hashmap-templated-ElanaFelsi/linkedList.h
+iostream
+-
+
+/home/elana/BootCamp-HW/cpp/data-structures-hashmap-templated-ElanaFelsi/main.cpp
+iostream
+-
+
