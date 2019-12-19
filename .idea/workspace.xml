@@ -11,7 +11,9 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b9b2fc49-aba5-4858-9f21-3eff62493626" name="Default Changelist" comment="" />
+    <list default="true" id="b9b2fc49-aba5-4858-9f21-3eff62493626" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/linkedList.h" beforeDir="false" afterPath="$PROJECT_DIR$/linkedList.h" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,6 +39,7 @@
   </component>
   <component name="ProjectId" id="1V96r5TMSI1roX54if8WaCS4jWL" />
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../data-structures-singly-linked-list-templated-ElanaFelsi" />
   </component>
@@ -69,7 +72,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1576653158064</updated>
-      <workItem from="1576653159589" duration="7770000" />
+      <workItem from="1576653159589" duration="8529000" />
     </task>
     <servers />
   </component>

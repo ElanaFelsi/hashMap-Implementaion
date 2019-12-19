@@ -1,6 +1,7 @@
 #ifndef DATA_STRUCTURES_SINGLY_LINKED_LIST_TEMPLATED_ELANAFELSI_LINKEDLIST_H
 #define DATA_STRUCTURES_SINGLY_LINKED_LIST_TEMPLATED_ELANAFELSI_LINKEDLIST_H
 
+
 #include <iostream>
 
 template <typename T>
@@ -30,11 +31,11 @@ public:
 
         Iterator& operator++(int);
 
-        bool operator!=(Node *node);
-        bool operator==(Node *node);
+        bool operator!=(const Node *node);
+        bool operator==(const Node *node);
 
-        bool operator!=(Iterator &other);
-        bool operator==(Iterator &other);
+        bool operator!=(const Iterator &other);
+        bool operator==(const Iterator &other);
 
     private:
         Node *m_node;
@@ -47,8 +48,8 @@ public:
     void remove(Node* node);
     bool isEmpty();
 
-    Iterator begin();
-    Iterator end();
+    Iterator begin() const;
+    Iterator end() const ;
 
     template <typename U>
     friend std::ostream &operator<<(std::ostream &os, const List<U> &lst);
@@ -60,7 +61,7 @@ private:
 
 template<typename T>
 inline List<T>::List()
-   :m_head(NULL), m_tail(NULL){}
+        :m_head(NULL), m_tail(NULL){}
 
 template<typename T>
 inline bool List<T>::isEmpty() {
@@ -68,15 +69,13 @@ inline bool List<T>::isEmpty() {
 }
 
 template<typename T>
-inline typename List<T>::Iterator List<T>::begin() {
-    Iterator it(m_head);
-    return List::Iterator(m_head);
+inline typename List<T>::Iterator List<T>::begin() const {
+    return Iterator(m_head);
 }
 
 template<typename T>
-inline typename List<T>::Iterator List<T>::end() {
-    Iterator it(NULL);
-    return it;
+inline typename List<T>::Iterator List<T>::end() const{
+    return Iterator(NULL);
 }
 
 template<typename T>
@@ -123,22 +122,22 @@ inline typename List<T>::Iterator &List<T>::Iterator::operator++(int){
 }
 
 template<typename T>
-bool List<T>::Iterator::operator!=(List::Node *node) {
+bool List<T>::Iterator::operator!=(const List::Node *node) {
     return m_node != node;
 }
 
 template<typename T>
-bool List<T>::Iterator::operator==(List::Node *node) {
+bool List<T>::Iterator::operator==(const List::Node *node) {
     return m_node == node;
 }
 
 template<typename T>
-bool List<T>::Iterator::operator!=(List::Iterator &other) {
+bool List<T>::Iterator::operator!=(const List::Iterator &other) {
     return *this != other.m_node;
 }
 
 template<typename T>
-bool List<T>::Iterator::operator==(List::Iterator &other) {
+bool List<T>::Iterator::operator==(const List::Iterator &other) {
     return *this == other.m_node;
 }
 
@@ -146,17 +145,7 @@ bool List<T>::Iterator::operator==(List::Iterator &other) {
 template<typename T>
 inline void List<T>::insert(T data)
 {
-//    Node *current = new Node(data, m_head);
-//    if(!m_head)
-//    {
-//        m_head = current;
-//        m_tail = current;
-//    }
-//    else
-//    {
-//        m_tail->m_next = current;
-//        m_tail = current;
-//    }
+
     Node *node = new Node(data, m_tail);
     Node* cur = m_head;
 
@@ -195,14 +184,14 @@ inline void List<T>::remove(List::Node *node)
 }
 
 template<typename U>
-inline std::ostream &operator<<(std::ostream &os, const List<U> &lst)
-{
-    for(typename List<U>::Iterator it = lst.begin(); it != lst.end(); ++it )
-    {
-        os << it->m_data << " -> ";
+inline std::ostream &operator<<(std::ostream &os, const List<U> &list) {
+    for (typename List<U>::Iterator it = list.begin();
+         it != list.end(); ++it) {
+        if (it->m_next == list.m_tail)
+            os << *it<< std::endl;
+        else
+            os << *it << " -> ";
     }
-    os << std::endl;
     return os;
 }
-
 #endif //DATA_STRUCTURES_SINGLY_LINKED_LIST_TEMPLATED_ELANAFELSI_LINKEDLIST_H
