@@ -150,6 +150,33 @@ HashedMap.cpp.s:
 	$(MAKE) -f CMakeFiles/data_structures_hashmap_templated_ElanaFelsi.dir/build.make CMakeFiles/data_structures_hashmap_templated_ElanaFelsi.dir/HashedMap.cpp.s
 .PHONY : HashedMap.cpp.s
 
+TestHashMap.o: TestHashMap.cpp.o
+
+.PHONY : TestHashMap.o
+
+# target to build an object file
+TestHashMap.cpp.o:
+	$(MAKE) -f CMakeFiles/data_structures_hashmap_templated_ElanaFelsi.dir/build.make CMakeFiles/data_structures_hashmap_templated_ElanaFelsi.dir/TestHashMap.cpp.o
+.PHONY : TestHashMap.cpp.o
+
+TestHashMap.i: TestHashMap.cpp.i
+
+.PHONY : TestHashMap.i
+
+# target to preprocess a source file
+TestHashMap.cpp.i:
+	$(MAKE) -f CMakeFiles/data_structures_hashmap_templated_ElanaFelsi.dir/build.make CMakeFiles/data_structures_hashmap_templated_ElanaFelsi.dir/TestHashMap.cpp.i
+.PHONY : TestHashMap.cpp.i
+
+TestHashMap.s: TestHashMap.cpp.s
+
+.PHONY : TestHashMap.s
+
+# target to generate assembly for a file
+TestHashMap.cpp.s:
+	$(MAKE) -f CMakeFiles/data_structures_hashmap_templated_ElanaFelsi.dir/build.make CMakeFiles/data_structures_hashmap_templated_ElanaFelsi.dir/TestHashMap.cpp.s
+.PHONY : TestHashMap.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -189,6 +216,9 @@ help:
 	@echo "... HashedMap.o"
 	@echo "... HashedMap.i"
 	@echo "... HashedMap.s"
+	@echo "... TestHashMap.o"
+	@echo "... TestHashMap.i"
+	@echo "... TestHashMap.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

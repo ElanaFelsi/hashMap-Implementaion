@@ -90,7 +90,10 @@
 		<Unit filename="/home/elana/BootCamp-HW/cpp/data-structures-hashmap-templated-ElanaFelsi/HashedMap.h">
 			<Option target="data_structures_hashmap_templated_ElanaFelsi"/>
 		</Unit>
-		<Unit filename="/home/elana/BootCamp-HW/cpp/data-structures-hashmap-templated-ElanaFelsi/linkedList.h">
+		<Unit filename="/home/elana/BootCamp-HW/cpp/data-structures-hashmap-templated-ElanaFelsi/TestHashMap.cpp">
+			<Option target="data_structures_hashmap_templated_ElanaFelsi"/>
+		</Unit>
+		<Unit filename="/home/elana/BootCamp-HW/cpp/data-structures-hashmap-templated-ElanaFelsi/TestHashMap.h">
 			<Option target="data_structures_hashmap_templated_ElanaFelsi"/>
 		</Unit>
 		<Unit filename="/home/elana/BootCamp-HW/cpp/data-structures-hashmap-templated-ElanaFelsi/main.cpp">
